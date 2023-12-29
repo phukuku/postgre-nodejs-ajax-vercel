@@ -1,9 +1,6 @@
-Chạy để cài:npm install
-chạy để load web:npm start
+npm install
+npm start
 link:http://localhost:3000/sample_data/
---
--- Database: `testing`
---
 
 -- --------------------------------------------------------
 

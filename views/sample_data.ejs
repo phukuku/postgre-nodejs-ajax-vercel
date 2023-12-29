@@ -127,9 +127,6 @@
 					<li class="nav-item active">
 						<a class="nav-link" href="/sample_data">Home <span class="sr-only"></span></a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Add Task</a>
-					</li>
 				</ul>
 				
 			</div>	
@@ -141,7 +138,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex justify-content-between align-items-center">
-                        <div class="col-sm-6">Sample Data</div>
+                        <div class="col-sm-6">All Student</div>
                         <div class="col-sm-6 d-flex justify-content-end align-items-center">
                             <input class="form-control me-3" type="search" id="searchInput" placeholder="Nhập từ khóa tìm kiếm!">
                           
@@ -162,10 +159,10 @@
                         <table class="table table-hover table-bordered" id="sample_data">
                             <thead>
                                 <tr>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
+                                    <th>Name</th>
+                                    <th>ID Student</th>
                                     <th>Gender</th>
-                                    <th>Age</th>
+                                    <th>Mark</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -188,12 +185,13 @@
                 </div>
                 <div class="modal-body">
                     <div class="mb-3">
-                        <label class="form-label">First Name</label>
+                        <label class="form-label">Name</label>
                         <input type="text" name="first_name" id="first_name" class="form-control" required />
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Last Name</label>
-                        <input type="text" name="last_name" id="last_name" class="form-control" required />
+                        <label class="form-label">Id Student</label>
+                       <input type="text" name="last_name" id="last_name" class="form-control" required /> 
+                      
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Gender</label>
@@ -203,8 +201,9 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Age</label>
-                        <input type="number" name="age" id="age" class="form-control" required  min="1" max="100"/>
+                        <label class="form-label">Mark</label>
+                        <input type="number" name="age" id="age" class="form-control" required step="0.1" min="0" max="10"/>
+
                     </div>
                 </div>
                 <div class="modal-footer"> 

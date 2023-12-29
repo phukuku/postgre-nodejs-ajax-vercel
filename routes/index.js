@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('sample_data', { title: 'Node JS PostgreSQL Ajax Application' });
+  res.render('sample_data', { title: 'Node JS PostgreSQL Application' });
 });
 
 module.exports = router;

@@ -1,4 +1,3 @@
-
 const Pool = require("pg").Pool;
 const pool = new Pool({
   user: "default",
@@ -7,19 +6,9 @@ const pool = new Pool({
   password: "HZWo1Lcg3RTa",
   port: 5432,
   ssl: {
-    rejectUnauthorized: false, // Tùy thuộc vào môi trường,  có thể cần điều chỉnh này
+    rejectUnauthorized: false, 
   },
 });
-
-// const pool = new Pool({
-//   user: "postgres",
-//   host: "localhost",
-//   database: "testing",
-//   password: "123456",
-//   port: 5432,
-//   });
-
-
 pool.connect(function(err) {
 	if (err) throw err;
 	console.log("Connected!");
